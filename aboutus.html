@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>About Us</title>
+    <style>
+        /* Header/logo Title */
+        header {
+            padding: 40px;
+            text-align: center;
+            background:#ED1B2F;
+            color: black;
+        }
+
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 40px;
+        }
+
+        block {
+            background-color: white;
+            width: 1500px;
+            border: 3px solid black;
+            padding: 50px;
+            margin: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--Header/logo Title */-->
+    <header>
+        <h1>BLOOD BANK MANAGEMENT SYSTEM</h1>
+
+    </header>
+    <!-----------------------------NAVBAR START HERE -------------------------------- */-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02"
+            aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor02">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="index2.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="search_donar.html">Find Blood</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="upcomingcamp.php">Upcoming Camps</a>
+                </li>
+                
+               
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">For Blood Bank</a>
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-item" data-toggle="modal" data-target="#loginModal">Blood Bank Login</a>
+                        <a class="dropdown-item" href="bank_registration.html">Blood Bank
+                            Registration</a>
+
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </nav>
+
+
+
+    <!-- -------------------login form Modal --------->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Admin Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- ---------------login form============  -->
+                    <form action="loginaction.php" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="block">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <h1>About us</h1>
+                    </div>
+                </div>
+                <h5>
+                    <br><br>
+                    <p class="text-center">Blood Bank Society is an organization which aims to fight against fanatic
+                        activities.It aims to enhance the humanistic elements of each individual and prepare them to be
+                        tolerant, responsive, accountable and responsible social citizen.Today, blood banks collect
+                        blood and separate it into its various components so they can be used most effectively according
+                        to the needs of the patient.</p>
+                    <br>
+                    <p class="text-center">Blood Bank Society promotes the awareness of blood donation among the public.
+                        It is committed to stay ahead of all linguistic-rational-religious-political differences and
+                        shall be fully focusing its objectives in health care activities, with technology.</p>
+                </h5>
+                <br><img src="images/abt.JPG" class="rounded mx-auto d-block" alt="About image">
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
